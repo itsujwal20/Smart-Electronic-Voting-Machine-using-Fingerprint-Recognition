@@ -1,49 +1,45 @@
-# Smart-Electronic-Voting-Machine-using-Fingerprint-Recognition
 # 🗳️ Smart Electronic Voting Machine using Fingerprint Recognition
 
-This project is a **biometric-based electronic voting system** developed using **Arduino UNO** and a **fingerprint sensor**. It authenticates users via fingerprint recognition, allowing them to vote securely. It prevents duplicate voting and displays results in real time.
+A secure, Arduino-based biometric voting system using fingerprint authentication to ensure one person, one vote — with real-time result display and prevention of duplicate votes.
 
 ---
 
 ## 🔧 Features
 
-- ✅ Fingerprint-based voter authentication
-- 🧠 Arduino-powered secure logic and memory
-- 📟 LCD-based voting guidance and result display
-- 🔒 Duplicate vote prevention logic
-- 🔊 Buzzer feedback for actions (vote cast, duplicate warning)
-- 🗳️ Vote count display using a dedicated result button
-- 🌐 Extendable to cloud-based or blockchain-secure voting
+- ✅ Fingerprint-based voter verification
+- 📟 LCD screen for vote guidance and result
+- 🔒 Duplicate vote protection
+- 🔊 Buzzer alerts for actions
+- 🗳️ Button-based voting for parties
+- 💡 Power-efficient, Arduino UNO-based implementation
+- 📂 Modular code: separate enrollment and voting logic
 
 ---
 
-## 📷 Hardware Used
+## 🧰 Hardware Used
 
-| Component             | Description                                      |
-|----------------------|--------------------------------------------------|
-| Arduino UNO          | Main microcontroller used for logic and control |
-| Fingerprint Sensor   | Used to identify and authenticate voters         |
-| 16x2 LCD Display     | Displays instructions, warnings, and results     |
-| Push Buttons (x4)    | Represents different political parties           |
-| Buzzer               | Indicates success/failure (e.g., duplicate vote) |
-| Jumper Wires         | Direct connections between components            |
-| Mounting Board       | Components mounted directly (no breadboard used) |
-
-> **Note:** A breadboard was **not** used. All connections were made directly using jumper wires on a mounting base.
+| Component             | Purpose                                     |
+|----------------------|---------------------------------------------|
+| Arduino UNO          | Core microcontroller                        |
+| Fingerprint Sensor   | Biometric voter identification              |
+| 16x2 LCD Display     | User interface for status and result        |
+| Push Buttons (x4)    | To vote for specific candidates/parties     |
+| Buzzer               | Feedback (vote confirmed / duplicate)       |
+| Jumper Wires         | Wiring between modules                      |
+| Fixed Mounting Board | Physical assembly base (no breadboard used) |
 
 ---
 
 ## 📁 Project Structure
 
 ```bash
-Smart-Electronic-Voting-Machine/
-├── enrollment_code.ino            # Code to enroll fingerprints
-├── With_Result_button.ino         # Main voting logic with result button
-├── Mini-Project_Report.docx       # Full documentation with figures and description
+.
+├── Voting.ino                          # Final integrated code for voting
+├── enrollment_code.ino                # Fingerprint enrollment code
+├── README.md                          # Project documentation (this file)
+├── documents/
+│   ├── Report - Smart Electronic Voting Machine Using Fingerprint Recognition.pdf
+│   └── PPT - Smart Electronic Voting Machine Using Fingerprint Recognition.pdf
 ├── images/
-│   ├── project_setup.jpg          # Image showing final setup
-│   ├── fingerprint_enroll.jpg     # Fingerprint module during enrollment
-│   ├── result_screen.jpg          # LCD displaying result
-│   └── duplicate_warning.jpg      # Warning shown on duplicate vote attempt
-├── README.md                      # This file
-└── LICENSE                        # (Optional) Project license
+│   ├── Image_1.jpg                    # Voting setup or fingerprint scan
+│   └── Image_2.jpg                    # LCD result or warning screen
